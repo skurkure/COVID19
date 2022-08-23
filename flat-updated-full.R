@@ -31,7 +31,7 @@ pmodel <- function(time, init, parameters) {
 }
 
 
-covidvax <- read.csv("~/Downloads/COVID19/covid19postvaxstatewidestats.csv")
+covidvax <- read.csv("COVID19/covid19postvaxstatewidestats.csv")
 head(covidvax$date, 50)
 #add total cases column
 covidvax <- covidvax %>%

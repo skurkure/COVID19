@@ -4,7 +4,7 @@ library(deSolve)
 
 
 #read file
-vaccination_rate_data <- read.csv("covid19vaccinesbycounty.csv")
+vaccination_rate_data <- read.csv("COVID19/covid19vaccinesbycounty.csv")
 agg_vax <- aggregate(cumulative_fully_vaccinated~administered_date, data = vaccination_rate_data, sum)
 agg_vax
 omicron_agg_vax <- agg_vax %>%
